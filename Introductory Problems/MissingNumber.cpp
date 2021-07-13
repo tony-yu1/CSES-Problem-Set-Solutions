@@ -1,3 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+
+    long long n;
+
+    cin >> n;
+
+    long long temp; 
+    long long sum;
+    sum = 0;
+    for(long long i = 1; i < n; i++)
+    {
+        cin >> temp;
+        sum += temp;
+    }
+
+    cout << n*(n+1)/2 - sum;
+
+    return 0;
+}
+
 /*
 #include <iostream>
 #include <vector>
