@@ -34,3 +34,44 @@ int main()
 
     return 0;
 }
+
+/*
+OR
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    string s;
+
+    cin >> s;
+
+    long long tempMax = 1;
+    long long ans = 1;
+
+    char temp = 'a';
+    for(char c : s)
+    {
+        if(c == temp)
+        {
+            tempMax++;
+            ans = max(ans, tempMax);
+        }
+        else
+        {
+            temp = c;
+            tempMax = 1;
+        }
+    }
+
+    cout << ans;
+
+
+
+    return 0;
+}
+*/
